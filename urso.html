@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Xatspace</title>
-	<link rel="stylesheet" type="text/css" href="https://github.com/UrsL2001/xatspace/css">
+	<title>Página com fundo de imagem GIF e vídeo centralizado</title>
+	<style>
+		body {
+			background-image: url('a.gif');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 100%;
+		}
+
+		video {
+			width: 80%;
+			height: auto;
+		}
+	</style>
 </head>
 <body>
-	<div class="matrix">
-		<h1 id="texto-digitado">Bem-vindo ao xat space, estou sem tempo para editar.</h1>
+	<div class="container">
+		<video src="video.mp4" autoplay muted loop>
+			Seu navegador não suporta vídeos em HTML5.
+		</video>
 	</div>
 </body>
 </html>
